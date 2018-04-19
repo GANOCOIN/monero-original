@@ -253,6 +253,7 @@ namespace nodetool
     //debug functions
     std::string print_connections_container();
 
+    std::set<std::string> getDnsSeeds(bool testnet);
 
     typedef epee::net_utils::boosted_tcp_server<epee::levin::async_protocol_handler<p2p_connection_context> > net_server;
 

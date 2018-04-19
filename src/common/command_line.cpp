@@ -132,11 +132,6 @@ namespace command_line
   , "How many blocks to sync at once during chain synchronization (0 = adaptive)."
   , 0
   };
-  const command_line::arg_descriptor<std::string> arg_check_updates = {
-    "check-updates"
-  , "Check for new versions of monero: [disabled|notify|download|update]"
-  , "notify"
-  };
   const arg_descriptor<bool> arg_fluffy_blocks  = {
     "fluffy-blocks"
   , "Relay blocks as fluffy blocks where possible (automatic on testnet)"

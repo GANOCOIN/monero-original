@@ -570,6 +570,7 @@ namespace cryptonote
       uint64_t cumulative_difficulty;
       uint64_t block_size_limit;
       uint64_t start_time;
+      uint64_t already_generated_coins;
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(status)
@@ -589,6 +590,7 @@ namespace cryptonote
         KV_SERIALIZE(cumulative_difficulty)
         KV_SERIALIZE(block_size_limit)
         KV_SERIALIZE(start_time)
+        KV_SERIALIZE(already_generated_coins)
       END_KV_SERIALIZE_MAP()
     };
   };
@@ -759,6 +761,7 @@ namespace cryptonote
       uint64_t reward;
       uint64_t block_size;
       uint64_t num_txes;
+      uint64_t already_generated_coins;
       
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(major_version)
@@ -774,6 +777,7 @@ namespace cryptonote
         KV_SERIALIZE(reward)
         KV_SERIALIZE(block_size)
         KV_SERIALIZE(num_txes)
+        KV_SERIALIZE(already_generated_coins)
       END_KV_SERIALIZE_MAP()
   };
 

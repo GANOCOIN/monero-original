@@ -176,15 +176,6 @@ namespace cryptonote
      */
     bool load_checkpoints_from_json(const std::string json_hashfile_fullpath);
 
-    /**
-     * @brief load new checkpoints from DNS
-     *
-     * @param testnet whether to load testnet checkpoints or mainnet
-     *
-     * @return true if loading successful and no conflicts
-     */
-    bool load_checkpoints_from_dns(bool testnet = false);
-
   private:
 
 

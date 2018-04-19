@@ -269,7 +269,7 @@ namespace cryptonote
     if (version >= 6 && version != hshd.top_version)
     {
       if (version < hshd.top_version)
-        MCLOG_RED(el::Level::Warning, "global", context << " peer claims higher version that we think - we may be forked from the network and a software upgrade may be needed");
+        MCLOG_RED(el::Level::Warning, "global", context << " peer claims higher version that we think - probably XMR node");
       LOG_DEBUG_CC(context, "Ignoring due to wrong top version for block " << (hshd.current_height - 1) << ": " << (unsigned)hshd.top_version << ", expected " << (unsigned)version);
       return false;
     }
